@@ -1,0 +1,326 @@
+/* style.css */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background-color: #5a86a8;
+  color: white;
+}
+
+/* BUTTON SEKOLAH KAMI */
+.school-btn {
+position: absolute;
+top: 20px;
+left: 20px;
+background: #0b4fa2;
+color: #ffffff;
+padding: 10px 18px;
+border-radius: 999px;
+font-size: 14px;
+font-weight: 600;
+text-decoration: none;
+box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+z-index: 20;
+}
+
+
+.school-btn:hover {
+background: #083a78;
+}
+
+/* NAVBAR */
+.navbar {
+position: absolute;
+top: 20px;
+left: 50%;
+transform: translateX(-50%);
+z-index: 10;
+}
+/* LOGO */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  margin-left: -5px;
+}
+
+.navbar-capsule {
+display: flex;
+gap: 8px;
+background: #ffffff;
+padding: 8px 34px;
+border-radius: 999px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+}
+
+
+.nav-item {
+padding: 8px 16px;
+border-radius: 999px;
+font-size: 15px;
+font-weight: 600;
+color: #0b4fa2;
+text-decoration: none;
+transition: 0.3s ease;
+transform: translateX(20px);
+}
+
+
+.nav-item.active,
+.nav-item:hover {
+background: #0b4fa2;
+color: #ffffff;
+}
+
+.struktur{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 125px;
+}
+
+/* FOTO TENGAH */
+.foto-utama{
+  display: flex;
+  justify-content: center;
+
+  margin-top: 80px;
+  margin-bottom: 70px;
+}
+
+.foto-box{
+  width: 430px;
+  height: 560px;
+
+  padding: 8px;
+
+  border-radius: 30px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #dff6ff,
+      #8edcff,
+      #dff6ff
+    );
+
+  box-shadow:
+    0 0 25px rgba(114,214,255,0.4),
+    0 0 60px rgba(114,214,255,0.2);
+}
+
+.foto-box img{
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  border-radius: 24px;
+}
+
+/* CONTAINER */
+.jabatan-container{
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 70px 120px;
+
+  max-width: 1400px;
+
+  margin: auto;
+
+  padding: 20px 40px 100px;
+}
+
+/* BOX */
+.jabatan-box{
+  text-align: center;
+}
+
+/* JABATAN */
+.jabatan-box h2{
+  font-size: 35px;
+
+  color: white;
+
+  margin-bottom: 15px;
+
+  line-height: 1.2;
+}
+
+/* NAMA */
+.jabatan-box p{
+  font-size: 20px;
+
+  color: #f1f5f9;
+}
+
+.jabatan-box-staff{
+  text-align: center;
+  transform: translateX(550px);
+}
+
+/* JABATAN */
+.jabatan-box-staff h2{
+  font-size: 35px;
+
+  color: white;
+
+  margin-bottom: 15px;
+
+  line-height: 1.2;
+}
+
+/* NAMA */
+.jabatan-box-staff p{
+  font-size: 20px;
+
+  color: #f1f5f9;
+}
+
+.kembali{
+  position: absolute;
+
+  top: 1720px;
+  left: 20px;
+
+  padding: 12px 24px;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  color: white;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,0.15),
+      rgba(0,140,255,0.10)
+    );
+
+  border: 2px solid rgba(180,235,255,0.45);
+
+  backdrop-filter: blur(10px);
+
+  box-shadow:
+    0 0 15px rgba(100,220,255,0.25);
+
+  transition: 0.3s;
+
+  z-index: 999;
+}
+
+.kembali:hover{
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 0 25px rgba(100,220,255,0.4);
+}
+
+.footer {
+  background-color: #ffffff;
+  padding: 40px 80px 20px;
+  font-family: Arial, sans-serif;
+  color: #000;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* ===== KIRI ===== */
+.footer-left {
+  max-width: 350px;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.footer-logo {
+  width: 55px;
+  height: auto;
+}
+
+.footer-title {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  position: relative;
+  top: -4px; /* tulisan WIsSNU agak naik */
+}
+
+.footer-text {
+  margin: 8px 0;
+}
+
+.footer-small {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* ===== TENGAH ===== */
+.footer-center h4,
+.footer-right h4 {
+  margin-bottom: 10px;
+}
+
+.footer-center ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-center ul li {
+  margin: 8px 0;
+}
+
+.footer-center ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* ===== KANAN ===== */
+.social-icons img {
+  width: 70px;
+  margin-right: 10px;
+  transform: translateX(-70px);
+}
+
+/* ===== BAWAH ===== */
+.footer hr {
+  margin: 30px 0 15px;
+  border: 1px solid #aaa;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+  color: #333;
+}
